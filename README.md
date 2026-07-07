@@ -1,75 +1,127 @@
-# React + TypeScript + Vite
+# 🎓 Graduation Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and elegant graduation invitation website developed to celebrate my Computer Science graduation.
 
-Currently, two official plugins are available:
+More than an invitation, this project represents my journey as a Software Engineer, combining minimalist design, subtle technology-inspired elements, and a premium user experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+> Graduation 2026 • Version 2026.1 • Production Ready 🚀
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ About
 
-## Expanding the ESLint configuration
+This website is being developed as both:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* my graduation celebration website;
+* a portfolio project that demonstrates my frontend development skills.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+The design blends software engineering aesthetics with a delicate visual identity, creating a unique experience inspired by documentation, GitHub, and minimalist invitations.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🛠️ Tech Stack
 
+* React
+* TypeScript
+* Vite
+* Tailwind CSS
+* Framer Motion
+* Supabase
+* GitHub Actions
+* GitHub Pages
+
+---
+
+## 🎯 Planned Features
+
+* Elegant landing page
+* Graduation countdown
+* Interactive timeline
+* Professional career section
+* Photo gallery
+* Final graduation project (TCC)
+* Celebration information
+* RSVP connected to Supabase
+* Spotify playlist
+* Responsive design
+* Smooth animations
+
+---
+
+## 📂 Project Structure
+
+```text
+src/
+├── assets/
+├── components/
+├── hooks/
+├── pages/
+├── services/
+├── types/
+├── App.tsx
+├── index.css
+└── main.tsx
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Development
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Clone the repository:
 
+```bash
+git clone git@github.com:iasmin-boaventura/graduation-website.git
 ```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+Build the project:
+
+```bash
+npm run build
+```
+
+---
+
+## 🗺️ Roadmap
+
+* ✅ Sprint 1 — Project setup
+* ⏳ Sprint 2 — Base layout
+* ⏳ Sprint 3 — Hero section
+* ⏳ Sprint 4 — Timeline
+* ⏳ Sprint 5 — Career
+* ⏳ Sprint 6 — Gallery
+* ⏳ Sprint 7 — Final Project (TCC)
+* ⏳ Sprint 8 — Celebration Information
+* ⏳ Sprint 9 — RSVP
+* ⏳ Sprint 10 — Deployment & Finishing
+
+---
+
+## 🎨 Design Principles
+
+* Minimalist
+* Elegant
+* Responsive
+* Accessible
+* Component-based
+* Clean code
+* Premium user experience
+
+---
+
+## 👩‍💻 Author
+
+Developed with ❤️ by **Iasmin Boaventura**
+
+Software Engineer • Computer Science Student
