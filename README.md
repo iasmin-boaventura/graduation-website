@@ -96,7 +96,7 @@ npm run build
 ## 🗺️ Roadmap
 
 * ✅ Sprint 1 — Project setup
-* ⏳ Sprint 2 — Base layout
+* ✅ Sprint 2 — Base layout
 * ⏳ Sprint 3 — Hero section
 * ⏳ Sprint 4 — Timeline
 * ⏳ Sprint 5 — Career

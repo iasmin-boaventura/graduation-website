@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 html {
   scroll-behavior: smooth;
@@ -7,6 +13,7 @@ html {
 
 body {
   margin: 0;
+  min-width: 320px;
   background-color: #ffffff;
   color: #222222;
   font-family: "Inter", sans-serif;
@@ -23,4 +30,19 @@ a {
 
 button {
   font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+:focus-visible {
+  outline: 2px solid #f4b6cf;
+  outline-offset: 4px;
+}
+
+::selection {
+  background-color: #fceef5;
+  color: #222222;
 }
