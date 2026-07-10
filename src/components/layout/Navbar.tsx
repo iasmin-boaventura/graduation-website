@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 
 const navigationItems = [
   { label: "Jornada", href: "#jornada" },
-  { label: "Carreira", href: "#carreira" },
   { label: "Galeria", href: "#galeria" },
   { label: "TCC", href: "#tcc" },
   { label: "Comemoração", href: "#comemoracao" },

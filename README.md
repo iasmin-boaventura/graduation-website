@@ -95,16 +95,29 @@ npm run build
 
 ## 🗺️ Roadmap
 
-* ✅ Sprint 1 — Project setup
-* ✅ Sprint 2 — Base layout
-* ✅ Sprint 3 — Hero section
-* ✅ Sprint 4 — Timeline
-* ⏳ Sprint 5 — Career
+* ✅ Sprint 1 — Project Setup
+* ✅ Sprint 2 — Base Layout
+* ✅ Sprint 3 — Hero Section
+* ✅ Sprint 4 — Journey Timeline
+* ✅ Sprint 5 — Integrated Journey
 * ⏳ Sprint 6 — Gallery
 * ⏳ Sprint 7 — Final Project (TCC)
 * ⏳ Sprint 8 — Celebration Information
 * ⏳ Sprint 9 — RSVP
-* ⏳ Sprint 10 — Deployment & Finishing
+* ⏳ Sprint 10 — Finalization & Deployment
+
+### Current Progress
+
+- ✅ Responsive layout
+- ✅ Animated Hero section
+- ✅ Countdown to graduation
+- ✅ Spotify integration
+- ✅ Interactive journey timeline
+- ✅ Academic and professional milestones
+- ⏳ Photo gallery
+- ⏳ Final Project (TCC)
+- ⏳ RSVP with Supabase
+- ⏳ GitHub Pages deployment
 
 ---
 

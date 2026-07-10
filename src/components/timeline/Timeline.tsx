@@ -1,61 +1,11 @@
 import { motion } from "motion/react";
-import { Code2, GraduationCap, Laptop, Sparkles } from "lucide-react";
-
-type TimelineEvent = {
-  year: string;
-  title: string;
-  description: string;
-  codeLabel: string;
-  icon: typeof Code2;
-};
-
-const timelineEvents: TimelineEvent[] = [
-  {
-    year: "2018",
-    title: "Início do Técnico em Informática",
-    description:
-      "O primeiro passo na tecnologia, onde a curiosidade por programação começou a virar caminho.",
-    codeLabel: "init: technical_school",
-    icon: Code2,
-  },
-  {
-    year: "2020",
-    title: "Conclusão do Ensino Médio Técnico",
-    description:
-      "Uma etapa importante foi finalizada, deixando a base para os próximos desafios na área.",
-    codeLabel: "status: completed",
-    icon: Sparkles,
-  },
-  {
-    year: "2022",
-    title: "Ingresso em Ciência da Computação",
-    description:
-      "O começo da graduação e de uma jornada mais profunda pelo universo da computação.",
-    codeLabel: "degree: computer_science",
-    icon: GraduationCap,
-  },
-  {
-    year: "2024",
-    title: "Primeiro emprego como desenvolvedora",
-    description:
-      "A teoria começou a encontrar a prática em projetos reais, código em produção e muito aprendizado.",
-    codeLabel: "role: software_developer",
-    icon: Laptop,
-  },
-  {
-    year: "2026",
-    title: "Conclusão da graduação",
-    description:
-      "Depois de tantos desafios, entregas e conquistas, chega a versão mais especial dessa jornada.",
-    codeLabel: "release: graduation_2026",
-    icon: GraduationCap,
-  },
-];
+import { CalendarDays } from "lucide-react";
+import { timelineEvents } from "./timelineData";
 
 const itemVariants = {
   hidden: {
     opacity: 0,
-    y: 24,
+    y: 16,
   },
   visible: {
     opacity: 1,
@@ -83,68 +33,108 @@ export function Timeline() {
           </h2>
 
           <p className="mt-5 text-base leading-8 text-[#6B7280] sm:text-lg">
-            Uma linha do tempo delicada sobre os passos que transformaram
-            curiosidade em carreira, graduação e celebração.
+            Uma linha do tempo sobre os passos acadêmicos e profissionais que
+            transformaram curiosidade em carreira, graduação e celebração.
           </p>
         </motion.div>
 
-        <div className="relative mt-20">
+        <div className="relative mt-16 sm:mt-20">
           <div
             aria-hidden="true"
             className="absolute left-4 top-0 h-full w-px bg-[#E5E7EB] md:left-1/2 md:-translate-x-1/2"
           />
 
-          <div className="space-y-12 md:space-y-16">
+          <div className="space-y-8 md:space-y-10">
             {timelineEvents.map((event, index) => {
               const Icon = event.icon;
               const isEven = index % 2 === 0;
 
               return (
                 <motion.article
-                  key={event.year}
+                  key={event.id}
                   className="relative grid gap-6 pl-12 md:grid-cols-2 md:pl-0"
                   variants={itemVariants}
                   initial="hidden"
                   whileInView="visible"
-                  viewport={{ once: true, amount: 0.35 }}
+                  viewport={{ once: true, amount: 0.25 }}
                   transition={{ duration: 0.5, ease: "easeOut" }}
                 >
                   <div
-                    className={`rounded-[20px] border border-[#E5E7EB] bg-white p-8 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-md ${
+                    className={`rounded-[20px] border bg-white p-5 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-md sm:p-6 ${
+                      event.isPromotion
+                        ? "border-[#F4B6CF]/60 bg-[#FCEEF5]/40"
+                        : event.isCurrent
+                          ? "border-[#F4B6CF]/60"
+                          : "border-[#E5E7EB]"
+                    } ${
                       isEven
-                        ? "md:col-start-1 md:mr-12"
-                        : "md:col-start-2 md:ml-12"
+                        ? "md:col-start-1 md:mr-10"
+                        : "md:col-start-2 md:ml-10"
                     }`}
                   >
-                    <div className="flex items-center gap-4">
-                      <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[#FCEEF5] text-[#F4B6CF]">
-                        <Icon size={22} strokeWidth={1.8} />
+                    <div className="flex items-start gap-3">
+                      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-[#FCEEF5] text-[#F4B6CF]">
+                        <Icon size={20} strokeWidth={1.8} />
                       </div>
 
-                      <div>
-                        <p className="font-mono text-sm text-[#9CA3AF]">
+                      <div className="min-w-0 flex-1">
+                        <div className="flex flex-wrap items-center gap-2">
+                          <span className="font-mono text-xs uppercase tracking-wider text-[#9CA3AF]">
+                            {event.type === "academic"
+                              ? "Acadêmico"
+                              : "Profissional"}
+                          </span>
+
+                          <span
+                            aria-hidden="true"
+                            className="text-xs text-[#D1D5DB]"
+                          >
+                            •
+                          </span>
+
+                          <span className="text-lg font-semibold text-[#222222]">
+                            {event.date}
+                          </span>
+
+                          {event.isCurrent && (
+                            <span className="inline-flex items-center gap-1.5 rounded-full bg-green-50 px-2.5 py-1 text-xs font-medium text-green-700">
+                              <span className="h-1.5 w-1.5 rounded-full bg-[#22C55E]" />
+                              Atual
+                            </span>
+                          )}
+                        </div>
+
+                        <p className="mt-1 truncate font-mono text-xs text-[#9CA3AF] sm:text-sm">
                           {event.codeLabel}
-                        </p>
-                        <p className="mt-1 text-2xl font-semibold text-[#222222]">
-                          {event.year}
                         </p>
                       </div>
                     </div>
 
-                    <h3 className="mt-6 font-serif text-2xl font-semibold text-[#222222]">
+                    <h3 className="mt-4 font-serif text-xl font-semibold leading-snug text-[#222222] sm:text-2xl">
                       {event.title}
                     </h3>
 
-                    <p className="mt-4 text-base leading-7 text-[#6B7280]">
+                    {event.period && (
+                      <div className="mt-3 flex items-start gap-2 text-sm text-[#9CA3AF]">
+                        <CalendarDays
+                          className="mt-0.5 shrink-0"
+                          size={15}
+                          strokeWidth={1.8}
+                        />
+                        <span>{event.period}</span>
+                      </div>
+                    )}
+
+                    <p className="mt-3 text-sm leading-6 text-[#6B7280] sm:text-base">
                       {event.description}
                     </p>
                   </div>
 
                   <div
                     aria-hidden="true"
-                    className="absolute left-4 top-8 z-10 flex h-8 w-8 -translate-x-1/2 items-center justify-center rounded-full border border-[#E5E7EB] bg-white md:left-1/2"
+                    className="absolute left-4 top-7 z-10 flex h-7 w-7 -translate-x-1/2 items-center justify-center rounded-full border border-[#E5E7EB] bg-white md:left-1/2"
                   >
-                    <span className="h-3 w-3 rounded-full bg-[#F4B6CF]" />
+                    <span className="h-2.5 w-2.5 rounded-full bg-[#F4B6CF]" />
                   </div>
                 </motion.article>
               );

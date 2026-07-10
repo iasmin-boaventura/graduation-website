@@ -3,11 +3,6 @@ import { Timeline } from '../components/timeline/Timeline'
 
 const sections = [
   {
-    id: 'carreira',
-    title: 'Trajetória Profissional',
-    description: 'Placeholder da seção de carreira.',
-  },
-  {
     id: 'galeria',
     title: 'Galeria',
     description: 'Placeholder da seção de galeria.',
