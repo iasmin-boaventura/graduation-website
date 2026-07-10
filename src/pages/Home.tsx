@@ -1,66 +1,58 @@
 import { Hero } from '../components/hero/Hero.tsx'
+import { Timeline } from '../components/timeline/Timeline'
 
 const sections = [
   {
-    id: "jornada",
-    label: "Minha Jornada",
-    description: "Linha do tempo da trajetória acadêmica.",
+    id: 'carreira',
+    title: 'Trajetória Profissional',
+    description: 'Placeholder da seção de carreira.',
   },
   {
-    id: "carreira",
-    label: "Trajetória Profissional",
-    description: "Cards com experiências profissionais.",
+    id: 'galeria',
+    title: 'Galeria',
+    description: 'Placeholder da seção de galeria.',
   },
   {
-    id: "galeria",
-    label: "Galeria",
-    description: "Fotos especiais da jornada até a formatura.",
+    id: 'tcc',
+    title: 'Projeto Final',
+    description: 'Placeholder da seção de TCC.',
   },
   {
-    id: "tcc",
-    label: "Projeto Final",
-    description: "Seção inspirada em um README do GitHub.",
+    id: 'comemoracao',
+    title: 'Comemoração',
+    description: 'Placeholder da seção de comemoração.',
   },
   {
-    id: "comemoracao",
-    label: "Comemoração",
-    description: "Informações sobre a celebração da formatura.",
+    id: 'rsvp',
+    title: 'Confirmar Presença',
+    description: 'Placeholder da seção de RSVP.',
   },
-  {
-    id: "rsvp",
-    label: "Confirmar Presença",
-    description: "Formulário de confirmação conectado ao Supabase futuramente.",
-  },
-];
+]
 
 function Home() {
   return (
     <>
       <Hero />
+      <Timeline />
 
       {sections.map((section) => (
         <section
           key={section.id}
           id={section.id}
-          className="border-t border-[#E5E7EB] bg-[#F9FAFB] px-6 py-28"
+          className="px-6 py-24 sm:py-32"
         >
-          <div className="mx-auto max-w-[1200px]">
-            <p className="mb-3 font-['JetBrains_Mono'] text-sm text-[#F4B6CF]">
-              section/{section.id}
-            </p>
-
-            <h2 className="font-['Cormorant_Garamond'] text-4xl font-semibold tracking-[-0.02em] text-[#222222]">
-              {section.label}
+          <div className="mx-auto max-w-6xl">
+            <h2 className="font-serif text-4xl font-semibold tracking-tight text-[#222222]">
+              {section.title}
             </h2>
-
-            <p className="mt-4 max-w-[560px] text-base leading-7 text-[#6B7280]">
+            <p className="mt-4 max-w-2xl text-lg leading-8 text-[#6B7280]">
               {section.description}
             </p>
           </div>
         </section>
       ))}
     </>
-  );
+  )
 }
 
 export default Home;

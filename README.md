@@ -98,7 +98,7 @@ npm run build
 * ✅ Sprint 1 — Project setup
 * ✅ Sprint 2 — Base layout
 * ✅ Sprint 3 — Hero section
-* ⏳ Sprint 4 — Timeline
+* ✅ Sprint 4 — Timeline
 * ⏳ Sprint 5 — Career
 * ⏳ Sprint 6 — Gallery
 * ⏳ Sprint 7 — Final Project (TCC)
