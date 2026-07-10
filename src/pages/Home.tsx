@@ -1,3 +1,5 @@
+import { Hero } from '../components/hero/Hero.tsx'
+
 const sections = [
   {
     id: "jornada",
@@ -34,30 +36,7 @@ const sections = [
 function Home() {
   return (
     <>
-      <section
-        id="inicio"
-        className="flex min-h-screen items-center justify-center px-6 pt-20"
-      >
-        <div className="mx-auto max-w-[800px] text-center">
-          <p className="mb-4 font-['JetBrains_Mono'] text-sm text-[#F4B6CF]">
-            Graduation Release • Version 2026.1
-          </p>
-
-          <h1 className="font-['Cormorant_Garamond'] text-5xl font-semibold tracking-[-0.03em] text-[#222222] md:text-7xl">
-            Iasmin Boaventura
-          </h1>
-
-          <p className="mt-6 text-lg leading-8 text-[#6B7280]">
-            Ciência da Computação • Turma 2026
-          </p>
-
-          <p className="mt-8 text-base leading-7 text-[#6B7280]">
-            Layout base da experiência. As próximas seções serão construídas em
-            pequenas sprints, mantendo a identidade minimalista, delicada e
-            inspirada em software.
-          </p>
-        </div>
-      </section>
+      <Hero />
 
       {sections.map((section) => (
         <section
