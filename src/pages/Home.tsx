@@ -1,12 +1,8 @@
+import { Gallery } from '../components/gallery/Gallery'
 import { Hero } from '../components/hero/Hero.tsx'
 import { Timeline } from '../components/timeline/Timeline'
 
 const sections = [
-  {
-    id: 'galeria',
-    title: 'Galeria',
-    description: 'Placeholder da seção de galeria.',
-  },
   {
     id: 'tcc',
     title: 'Projeto Final',
@@ -29,6 +25,7 @@ function Home() {
     <>
       <Hero />
       <Timeline />
+      <Gallery />
 
       {sections.map((section) => (
         <section
@@ -40,6 +37,7 @@ function Home() {
             <h2 className="font-serif text-4xl font-semibold tracking-tight text-[#222222]">
               {section.title}
             </h2>
+
             <p className="mt-4 max-w-2xl text-lg leading-8 text-[#6B7280]">
               {section.description}
             </p>
@@ -50,4 +48,4 @@ function Home() {
   )
 }
 
-export default Home;
+export default Home

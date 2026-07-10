@@ -100,7 +100,7 @@ npm run build
 * ✅ Sprint 3 — Hero Section
 * ✅ Sprint 4 — Journey Timeline
 * ✅ Sprint 5 — Integrated Journey
-* ⏳ Sprint 6 — Gallery
+* ✅ Sprint 6 — Gallery
 * ⏳ Sprint 7 — Final Project (TCC)
 * ⏳ Sprint 8 — Celebration Information
 * ⏳ Sprint 9 — RSVP
@@ -114,7 +114,7 @@ npm run build
 - ✅ Spotify integration
 - ✅ Interactive journey timeline
 - ✅ Academic and professional milestones
-- ⏳ Photo gallery
+- ✅ Photo gallery
 - ⏳ Final Project (TCC)
 - ⏳ RSVP with Supabase
 - ⏳ GitHub Pages deployment
