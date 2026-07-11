@@ -102,7 +102,7 @@ npm run build
 * ✅ Sprint 5 — Integrated Journey
 * ✅ Sprint 6 — Gallery
 * ✅ Sprint 7 — Final Project (TCC)
-* ⏳ Sprint 8 — Celebration Information
+* ✅ Sprint 8 — Celebration Information
 * ⏳ Sprint 9 — RSVP
 * ⏳ Sprint 10 — Finalization & Deployment
 

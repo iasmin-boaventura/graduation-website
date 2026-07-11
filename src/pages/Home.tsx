@@ -1,14 +1,10 @@
 import { Gallery } from '../components/gallery/Gallery'
 import { Hero } from '../components/hero/Hero.tsx'
+import { PartyInfo } from '../components/party/PartyInfo'
 import { TCC } from '../components/tcc/TCC'
 import { Timeline } from '../components/timeline/Timeline'
 
 const sections = [
-  {
-    id: 'comemoracao',
-    title: 'Comemoração',
-    description: 'Placeholder da seção de comemoração.',
-  },
   {
     id: 'rsvp',
     title: 'Confirmar Presença',
@@ -23,6 +19,7 @@ function Home() {
       <Timeline />
       <Gallery />
       <TCC />
+      <PartyInfo />
 
       {sections.map((section) => (
         <section
