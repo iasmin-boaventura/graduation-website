@@ -1,13 +1,9 @@
 import { Gallery } from '../components/gallery/Gallery'
 import { Hero } from '../components/hero/Hero.tsx'
+import { TCC } from '../components/tcc/TCC'
 import { Timeline } from '../components/timeline/Timeline'
 
 const sections = [
-  {
-    id: 'tcc',
-    title: 'Projeto Final',
-    description: 'Placeholder da seção de TCC.',
-  },
   {
     id: 'comemoracao',
     title: 'Comemoração',
@@ -26,6 +22,7 @@ function Home() {
       <Hero />
       <Timeline />
       <Gallery />
+      <TCC />
 
       {sections.map((section) => (
         <section

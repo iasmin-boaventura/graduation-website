@@ -101,7 +101,7 @@ npm run build
 * ✅ Sprint 4 — Journey Timeline
 * ✅ Sprint 5 — Integrated Journey
 * ✅ Sprint 6 — Gallery
-* ⏳ Sprint 7 — Final Project (TCC)
+* ✅ Sprint 7 — Final Project (TCC)
 * ⏳ Sprint 8 — Celebration Information
 * ⏳ Sprint 9 — RSVP
 * ⏳ Sprint 10 — Finalization & Deployment
@@ -115,7 +115,7 @@ npm run build
 - ✅ Interactive journey timeline
 - ✅ Academic and professional milestones
 - ✅ Photo gallery
-- ⏳ Final Project (TCC)
+- ✅ Final Project (TCC)
 - ⏳ RSVP with Supabase
 - ⏳ GitHub Pages deployment
 
