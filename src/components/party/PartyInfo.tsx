@@ -26,7 +26,7 @@ function PartyInfo() {
   return (
     <section
       id="comemoracao"
-      className="px-6 py-24 sm:py-32"
+      className="scroll-mt-20 px-6 py-24 sm:py-32"
       aria-labelledby="party-title"
     >
       <div className="mx-auto max-w-6xl">

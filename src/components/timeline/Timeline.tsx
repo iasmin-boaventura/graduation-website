@@ -15,7 +15,10 @@ const itemVariants = {
 
 export function Timeline() {
   return (
-    <section id="jornada" className="bg-[#F9FAFB] px-6 py-24 sm:py-32">
+    <section
+      id="jornada"
+      className="scroll-mt-20 bg-[#F9FAFB] px-6 py-24 sm:py-32"
+    >
       <div className="mx-auto max-w-6xl">
         <motion.div
           className="mx-auto max-w-2xl text-center"
