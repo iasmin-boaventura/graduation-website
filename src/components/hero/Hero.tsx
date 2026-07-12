@@ -21,7 +21,7 @@ export function Hero() {
           Graduation Release • Version 2026.1
         </div>
 
-        <p className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-[#9CA3AF]">
+        <p className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-[#6B7280]">
           Ciência da Computação • Turma 2026
         </p>
 

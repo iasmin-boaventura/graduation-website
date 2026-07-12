@@ -10,7 +10,7 @@ function Footer() {
     <footer className="border-t border-[#E5E7EB] bg-[#FCFCFC]">
       <div className="mx-auto flex max-w-[1200px] flex-col gap-8 px-6 py-12 md:flex-row md:items-end md:justify-between">
         <div>
-          <p className="mb-4 font-['JetBrains_Mono'] text-sm text-[#9CA3AF]">
+          <p className="mb-4 font-['JetBrains_Mono'] text-sm text-[#6B7280]">
             git log
           </p>
 
@@ -24,7 +24,7 @@ function Footer() {
         </div>
 
         <div className="space-y-2 text-left md:text-right">
-          <p className="font-['JetBrains_Mono'] text-sm text-[#9CA3AF]">
+          <p className="font-['JetBrains_Mono'] text-sm text-[#6B7280]">
             Version 2026.1
           </p>
 
