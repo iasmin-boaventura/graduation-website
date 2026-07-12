@@ -103,7 +103,7 @@ npm run build
 * ✅ Sprint 6 — Gallery
 * ✅ Sprint 7 — Final Project (TCC)
 * ✅ Sprint 8 — Celebration Information
-* ⏳ Sprint 9 — RSVP
+* ✅ Sprint 9 — RSVP
 * ⏳ Sprint 10 — Finalization & Deployment
 
 ### Current Progress
@@ -116,7 +116,7 @@ npm run build
 - ✅ Academic and professional milestones
 - ✅ Photo gallery
 - ✅ Final Project (TCC)
-- ⏳ RSVP with Supabase
+- ✅ RSVP with Supabase
 - ⏳ GitHub Pages deployment
 
 ---
