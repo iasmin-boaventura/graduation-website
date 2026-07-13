@@ -37,7 +37,6 @@ The design blends software engineering aesthetics with a delicate visual identit
 * Elegant landing page
 * Graduation countdown
 * Interactive timeline
-* Professional career section
 * Photo gallery
 * Final graduation project (TCC)
 * Celebration information
@@ -90,34 +89,6 @@ Build the project:
 ```bash
 npm run build
 ```
-
----
-
-## 🗺️ Roadmap
-
-* ✅ Sprint 1 — Project Setup
-* ✅ Sprint 2 — Base Layout
-* ✅ Sprint 3 — Hero Section
-* ✅ Sprint 4 — Journey Timeline
-* ✅ Sprint 5 — Integrated Journey
-* ✅ Sprint 6 — Gallery
-* ✅ Sprint 7 — Final Project (TCC)
-* ✅ Sprint 8 — Celebration Information
-* ✅ Sprint 9 — RSVP
-* ⏳ Sprint 10 — Finalization & Deployment
-
-### Current Progress
-
-- ✅ Responsive layout
-- ✅ Animated Hero section
-- ✅ Countdown to graduation
-- ✅ Spotify integration
-- ✅ Interactive journey timeline
-- ✅ Academic and professional milestones
-- ✅ Photo gallery
-- ✅ Final Project (TCC)
-- ✅ RSVP with Supabase
-- ⏳ GitHub Pages deployment
 
 ---
 

@@ -66,19 +66,19 @@ export function Countdown({ targetDate }: CountdownProps) {
 
   return (
     <div
-      className="grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4"
+      className="grid grid-cols-4 gap-2 sm:gap-4"
       aria-label="Contador regressivo para a formatura"
     >
       {items.map((item) => (
         <div
           key={item.label}
-          className="rounded-[20px] border border-[#E5E7EB] bg-white px-5 py-4 text-center shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-md"
+          className="rounded-2xl border border-[#E5E7EB] bg-white px-2 py-3 text-center shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-md sm:rounded-[20px] sm:px-5 sm:py-4"
         >
-          <strong className="block font-mono text-2xl font-semibold text-[#222222] sm:text-3xl">
+          <strong className="block font-mono text-xl font-semibold text-[#222222] sm:text-3xl">
             {String(item.value).padStart(2, '0')}
           </strong>
 
-          <span className="mt-1 block text-sm font-medium text-[#6B7280]">
+          <span className="mt-1 block text-[11px] font-medium text-[#6B7280] sm:text-sm">
             {item.label}
           </span>
         </div>

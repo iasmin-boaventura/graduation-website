@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import monogram from "@/assets/brand/monogram.svg";
 
 const navigationItems = [
   { label: "Jornada", href: "#jornada" },
@@ -38,9 +39,10 @@ function Navbar() {
       >
         <a
           href="#inicio"
-          className="font-['Cormorant_Garamond'] text-2xl font-semibold tracking-[-0.02em] text-[#222222]"
+          aria-label="Ir para o início"
+          className="shrink-0 rounded-xl focus-visible:outline-none"
         >
-          Iasmin Boaventura
+          <img src={monogram} alt="" className="h-12 w-auto sm:h-14" />
         </a>
 
         <div className="hidden items-center gap-8 md:flex">
@@ -57,7 +59,7 @@ function Navbar() {
 
         <a
           href="#rsvp"
-          className="rounded-2xl bg-[#F4B6CF] px-5 py-3 text-sm font-semibold text-white transition duration-200 hover:scale-[1.02] hover:bg-[#EFA5C5]"
+          className="shrink-0 whitespace-nowrap rounded-2xl bg-[#F4B6CF] px-4 py-3 text-sm font-semibold text-white transition duration-200 hover:scale-[1.02] hover:bg-[#EFA5C5] sm:px-5"
         >
           Confirmar presença
         </a>
