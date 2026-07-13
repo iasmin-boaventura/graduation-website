@@ -47,8 +47,7 @@ export function Gallery() {
           </h2>
 
           <p className="mt-4 text-lg leading-8 text-[#6B7280]">
-            Alguns registros das pessoas, lugares e momentos que fizeram parte
-            dessa jornada.
+            Alguns registros de momentos, lugares e pessoas que fizeram parte dessa jornada!
           </p>
         </motion.div>
 

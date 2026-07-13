@@ -36,8 +36,7 @@ export function Timeline() {
           </h2>
 
           <p className="mt-5 text-base leading-8 text-[#6B7280] sm:text-lg">
-            Uma linha do tempo sobre os passos acadêmicos e profissionais que
-            transformaram curiosidade em carreira, graduação e celebração.
+            Linha do tempo da minha jornada acadêmica e profissional até chegar aqui!
           </p>
         </motion.div>
 
@@ -99,12 +98,6 @@ export function Timeline() {
                             {event.date}
                           </span>
 
-                          {event.isCurrent && (
-                            <span className="inline-flex items-center gap-1.5 rounded-full bg-green-50 px-2.5 py-1 text-xs font-medium text-green-700">
-                              <span className="h-1.5 w-1.5 rounded-full bg-[#22C55E]" />
-                              Atual
-                            </span>
-                          )}
                         </div>
 
                         <p className="mt-1 truncate font-mono text-xs text-[#9CA3AF] sm:text-sm">
@@ -125,6 +118,12 @@ export function Timeline() {
                           strokeWidth={1.8}
                         />
                         <span>{event.period}</span>
+                        {event.isCurrent && (
+                            <span className="inline-flex items-center gap-1.5 rounded-full bg-green-50 px-2.5 py-1 text-xs font-medium text-green-700">
+                              <span className="h-1.5 w-1.5 rounded-full bg-[#22C55E]" />
+                              Atual
+                            </span>
+                          )}
                       </div>
                     )}
 

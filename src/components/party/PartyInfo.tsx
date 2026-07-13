@@ -50,7 +50,7 @@ function PartyInfo() {
 
           <p className="mt-4 text-lg leading-8 text-[#6B7280]">
             Depois de tantos anos, desafios e conquistas, chegou a hora de
-            celebrar essa nova versão da minha história com pessoas especiais.
+            celebrar essa nova versão da minha história - Bacharela em Ciência da Computação!
           </p>
         </motion.header>
 

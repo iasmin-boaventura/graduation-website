@@ -82,8 +82,7 @@ function RSVP() {
           </h2>
 
           <p className="mx-auto mt-4 max-w-2xl text-lg leading-8 text-[#6B7280]">
-            Preencha seus dados e os de quem vai comemorar esse momento com
-            você.
+            Me ajude a organizar a comemoração preenchendo seus dados e os de quem vai comemorar esse momento com a gente!
           </p>
         </motion.div>
 
@@ -135,7 +134,7 @@ function RSVP() {
               />
 
               <span className="text-sm leading-6 text-[#6B7280]">
-                Pretendo consumir bebida alcoólica na comemoração.
+                Pretendo consumir bebida alcoólica.
               </span>
             </label>
 
@@ -258,7 +257,7 @@ function RSVP() {
               <textarea
                 id="message"
                 rows={4}
-                placeholder="Deixe uma mensagem para a formanda"
+                placeholder="Deixe uma mensagem pra mim <3"
                 className="mt-2 w-full resize-y rounded-[14px] border border-[#E5E7EB] bg-white px-4 py-3 text-base text-[#222222] outline-none transition placeholder:text-[#9CA3AF] focus:border-[#F4B6CF] focus:ring-4 focus:ring-[#FCEEF5]"
                 {...register("message")}
               />

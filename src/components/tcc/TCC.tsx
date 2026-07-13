@@ -51,7 +51,7 @@ function TCC() {
             <div className="flex flex-col p-6 sm:p-8 lg:p-10">
               <div>
                 <p className="font-mono text-sm font-medium text-[#9CA3AF]">
-                  Projeto Final • Ciência da Computação
+                  TCC • Ciência da Computação
                 </p>
 
                 <h3 className="mt-4 font-serif text-3xl font-semibold leading-tight tracking-tight text-[#222222] sm:text-4xl">
