@@ -2,10 +2,10 @@ import { useEffect, useState } from "react";
 import monogram from "@/assets/brand/monogram.svg";
 
 const navigationItems = [
+  { label: "Comemoração", href: "#comemoracao" },
   { label: "Jornada", href: "#jornada" },
   { label: "Galeria", href: "#galeria" },
   { label: "TCC", href: "#tcc" },
-  { label: "Comemoração", href: "#comemoracao" },
 ];
 
 function Navbar() {
